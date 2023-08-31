@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
   <p>{{ USDPipeConvert | currency: 'USD' }}</p>
   <p>{{ YENPipeConvert | currency: 'JPY' }}</p>
   <p>
-  Super Hero Power: {{ power | exponentialStrength: factor }}
+  Super Hero Power: {{ integer | exponentialStrength: power }}
   </p>
   <p>Orginal Word: {{ word }}</p>
   <span>Reversed Word: {{ word | reverseString }}</span>
@@ -29,8 +29,8 @@ export class HeroBirthdayComponent implements OnInit {
   EURPipeConvert = 1234.56;
   USDPipeConvert = 1234.56;
   YENPipeConvert = 1234;
-  power = 2
-  factor = '5'
+  power = '10'
+  integer = 2
   word = 'Hello World'
 
   ngOnInit(): void {
