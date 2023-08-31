@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
+import { ExponentialStrengthPipe } from './exponential-strength.pipe';
+import { ReverseStringPipe } from './reverse-string.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [	
+    AppComponent,
+    HeroBirthdayComponent,
+    ExponentialStrengthPipe,
+    ReverseStringPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
